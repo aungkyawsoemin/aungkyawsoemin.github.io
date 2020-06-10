@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
 	<!--
 		Basic
 	-->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	<title>Ryan - vCard / Resume / CV Template</title>
+	<title>Aung Kyaw Soe Min - Developer Profile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="vCard & Resume Template" />
+	<meta name="description" content="I have 6 years of experience working in web development. In my current role as Full stack Developer at Phandeeyar. I've developed products from design, development to testing and deployment. I have experience in REST API to mobile application integration. I am a self-starter and eager to learn new things." />
 	<meta name="keywords" content="developer, programmer, vcard, responsive, resume, personal, card, cv, cards, portfolio" />
-	<meta name="author" content="aungkyawsoemin" />
+	<meta name="author" content="Aung Kyaw Soe Min" />
 	
 	<!--
 		Load Fonts
@@ -65,14 +64,24 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66883903-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-66883903-3');
+	</script>
+
 	<!--
 		Favicons
 	-->
 	<link rel="shortcut icon" href="https://cdn.about.me/s3/h/favicon/favicon_48.d67d3678.png">
 	<style type="text/css">
 		.hide {
-			display: none;
+			display: none !important;
 		}
 		.skills-list.list ul.personal-skills li .name:before {
     		content: "\f400" !important;
@@ -81,6 +90,10 @@
 			list-style: inside;
     		font-size: 14px;
 		}
+		.card-started .profile.profile-slope-border .slide:before,
+		.card-started .profile.profile-slope-border .slide:after{
+		 	border: 1px solid #6ec379;
+		 }
 	</style>
 </head>
 
@@ -165,10 +178,10 @@
 				<!--
 					Profile
 				-->
-				<div class="profile">
+				<div class="profile profile-slope-border">
 
 					<!-- profile image -->
-					<div class="slide" style="background-image: url(images/bg.jpg);"></div>
+					<div class="slide" style="background-image: url(images/bg-developer-screen.jpg);"></div>
 
 					<!-- profile photo -->
 					<div class="image">

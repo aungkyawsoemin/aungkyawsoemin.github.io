@@ -499,6 +499,6 @@ function initMap() {
 	var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
-		title: 'We are here!'
+		title: 'I\'m here!'
 	});
 }
