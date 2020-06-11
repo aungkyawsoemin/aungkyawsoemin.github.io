@@ -97,6 +97,39 @@
 		 .social a:hover span {
 		 	color: #81d077 !important;
 		 }
+		 .box-item{
+			cursor:pointer;
+			transition:all 1s;
+		}
+		.box-item:after,.box-item:before{
+			content:" ";
+			width:10px;
+			height:10px;
+			position:absolute;
+			border :0px solid #fff;
+			transition:all 1s;
+			z-index: 999;
+		}
+		.box-item:after{
+			top:-1px;
+			left:-1px;
+			border-top:5px solid #77cc6c;
+			border-left:5px solid #77cc6c;
+		}
+		.box-item:before{
+			bottom:-1px;
+			right:-1px;
+			border-bottom:5px solid #77cc6c;
+			border-right:5px solid #77cc6c;
+		}
+		.grid-item:hover .box-item:before{
+			width: 2em;
+			height: 2em;
+		}
+		.grid-item:hover .box-item:after{
+			width: 2em;
+			height: 2em;
+		}
 	</style>
 </head>
 
@@ -701,7 +734,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/rgo47.png" class="name has-popup">
+										<a href="images/works/rgo47.png" class="name has-popup-image">
 											rgo47.com
 										</a>
 										<div class="category">Ecommerce</div>
@@ -721,7 +754,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/erp.png" class="name has-popup">
+										<a href="images/works/erp.png" class="name has-popup-image">
 											ERP
 										</a>
 										<div class="category">Ecommerce</div>
@@ -741,7 +774,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/gogosmiles.png" class="name has-popup">
+										<a href="images/works/gogosmiles.png" class="name has-popup-image">
 											GoGoSmiles
 										</a>
 										<div class="category">Logistic</div>
@@ -802,7 +835,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/xavey.png" class="name has-popup">
+										<a href="images/works/xavey.png" class="name has-popup-image">
 											Xavey Research
 										</a>
 										<div class="category">Survey</div>
@@ -814,7 +847,7 @@
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item logistic border-line-h">
 								<div class="box-item">
 									<div class="image">
-										<a href="images/works/konesi.png" class="has-image">
+										<a href="images/works/konesi.png" class="has-popup-image">
 											<img src="images/works/konesi.png" alt="" />
 											<span class="info">
 												<span class="ion ion-image"></span>
@@ -822,7 +855,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/konesi.png" class="name has-popup">
+										<a href="images/works/konesi.png" class="name has-popup-image">
 											KoneSi Freight
 										</a>
 										<div class="category">Logistic</div>
@@ -860,7 +893,7 @@
 								</div>
 								<div class="info-list">
 									<ul>
-										<li><strong>Address</strong> Yangon, USA</li>
+										<li><strong>Address</strong> Yangon, Myanmar</li>
 										<li><strong>Email</strong> aungkyawsoemin@gmail.com</li>
 										<li><strong>Freelance</strong> Available</li>
 									</ul>
